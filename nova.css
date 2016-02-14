@@ -1,0 +1,308 @@
+/*Copyright (c) 2016 DinosParkour
+  Please do not redistribute without permission.
+  Thank you, and enjoy!*/
+
+/* Background */
+.app {
+    background-image: url("https://i.imgur.com/h0YyOD7.png");
+	background-size: cover;
+}
+
+/*Transparency*/
+#voice-connection,
+.search-bar,
+.guilds-wrapper,
+.channels-wrap,
+.guild-channels,
+.account,
+.links,
+.chat,
+.title-wrap,
+.content,
+.chat-empty,
+.private-channels,
+.guild-header header,
+.typing,
+.divider-red span {
+    background: transparent !important;
+}
+
+/*Buttons*/
+.btn {
+    opacity: 0.9;
+}
+
+/*Guild area*/
+.guilds-wrapper {
+	width: 85px;   
+}
+
+.guilds {
+	background: rgba(20,23,27,0.15);    
+}
+
+.guilds li {
+     margin-left: 1px;   
+}
+
+/*Selected guild & unread messages*/
+.guilds li.unread .guild-inner:before {
+    background-color: rgba(255,0,0,0.25);
+}
+
+.guilds li.active .guild-inner:before {
+    background-color: rgba(0,0,0,0.25);
+}
+
+.guilds li.active .guild-inner:before,
+.guilds li.unread .guild-inner:before {
+     width: 77.5px;
+    height: 55px;
+    margin-top: -28px;
+    margin-left: 7.5px;
+    transition: background-color .25s cubic-bezier(0.4,0,1,1);
+    
+}
+
+/*Create new guild button*/
+.guilds-add {
+    opacity: 0.15
+}
+
+/*Help button*/
+.help-container {
+    display: none;
+}
+
+/*Guild info*/
+.guild-header span {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	color: transparent;
+	-webkit-background-clip: text;
+    text-shadow: 0 0 0 rgba(155,48,255, 0.25);
+}
+
+/*Guild settings*/
+.guild-header ul {
+    opacity: 0;
+    transition: transform .5s cubic-bezier(0.18,0.89,0.32,1.28);
+}
+
+.guild-header-open ul {
+	opacity: 1;
+}
+
+.btn-hamburger span {
+	background: #fff;
+}
+
+.guild-header header {
+	box-shadow: none;
+}
+
+/*Channel area*/
+.channel:not(.selected) {
+    transition: background .3s ease-out;
+}
+
+.channel:not(.selected):hover {
+    transition: background .2s ease-in;
+	background: rgba(0,0,0,0.3);
+}
+
+.guild-channels ul .channel:not(.selected):before,
+.guild-channels ul .channel.selected:before,
+.guild-channels ul .channel.selected:hover:before,
+.private-channels .channel:not(.selected):before,
+.private-channels .channel.selected:before,
+.private-channels .channel.selected:hover:before {
+	border-left: 5px solid purple;
+}
+
+.guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
+	left: -11px;
+}
+
+/*Voice panel*/
+#voice-connection {
+	border-top: none;
+}
+
+#voice-connection .btn-group,
+.account .btn-group {
+	border: none;
+}
+
+/*User settings*/
+.account .username {
+	font-size: 16px;
+	padding: 12px;
+	text-shadow: 0 0 1.25px white ,
+        0 0 2.5px white ,
+        0 0 5.25px white ,
+        0 0 1.25px #ff00de ,
+        0 0 8.75px #ff00de ,
+        0 0 10px #ff00de ,
+        0 0 12.5px #ff00de ;
+}
+
+.account {
+	border-top: none ;
+    margin-left: 15px;
+}
+
+ .status {
+    border-color: rgba(0,0,0,0.33) !important;
+}
+
+/*Popout menu*/
+.popout header, .slider-bar-fill {
+	background-color: #0066cc;
+}
+
+.user-popout .user-popout-options .btn {
+	background-color: #0066cc;
+}
+
+.user-popout .user-popout-options .btn:hover {
+	background-color: #0080ff;
+}
+
+.user-popout .username {
+    font-size: 16px;
+}
+
+/*Info links*/
+.links {
+    display: none;
+}
+
+/*Channel info*/
+.flex-spacer .title-wrap {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-top: none;
+    border-style: solid;
+    border-color: transparent !important; 
+}
+
+/*Channel title*/
+.topic {
+	color: #cdcdcd;
+}
+
+/*Chat area*/
+.content .flex-spacer {
+    background: rgba(255,255,255,0.05);
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+
+/*Unread messages*/
+.chat .new-messages-bar {
+	background-color: rgba(204,97,61,.9);
+}
+
+.chat .new-messages-bar:hover {
+	background-color: rgba(204,97,61,1);
+}
+
+.chat .new-messages-bar button:last-child {
+	color: rgba(255,255,255,0.5);
+}
+
+/*Mention*/
+.markup .highlight {
+    background-color: rgba(255,255,255,.1) !important;
+    color: #ddd;
+    border-radius: 10%;
+}
+
+.markup .highlight:hover {
+    background-color: rgba(255,255,255,.2) !important;
+    color: #ddd;
+    border-radius: 10%;
+}
+
+/*URLs*/
+.message-group a span {
+	color: #55aaff;
+    text-shadow: 1px 1px 0 #001a33;
+}
+
+/*Scrolling bar*/
+.scroller-wrap .scroller::-webkit-scrollbar-thumb {
+	border: 3px solid rgba(0,0,0,0.25) !important;
+}
+
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece {
+	border: 3px solid rgba(255,255,255,0) !important;
+	background-color: rgba(0,0,0,0.3) !important;
+}
+
+/*Message area*/
+.channel-textarea .channel-textarea-inner {
+    background: rgba(10,13,16,0.1);
+}
+
+/*Twitch emotes button*/
+#twitchcord-button {
+    background-size: 24px;
+	background-position: 20px;
+	background-color: transparent;
+}
+
+/*Typing status*/
+.typing {
+	font-size: 13px;
+}
+
+/*Settings panel*/
+.settings .settings-header {
+	background: #1A1D20;
+}
+
+.form .btn-primary {
+	background-color: #1D6586;
+}
+
+.form .btn-primary:hover {
+	background-color: #25ACE8;
+}
+
+.user-settings-modal a {
+	color: #1D6586;
+}
+
+.user-settings-modal a:hover {
+	color: #25ACE8;
+}
+
+/*Channel members*/
+.channel-members {
+    background: rgba(20,23,27,0.25) !important;
+}
+
+.member-username {
+    text-shadow: 0 0 0 rgba(255,255,255,0.255);
+}
+
+.channel-members-wrap .member-inner div{
+    -webkit-filter: none !important;
+}
+
+.channel-members .invite-btn {
+	background: #0066cc;
+    transition: background .3s ease-out;
+}
+
+.channel-members .invite-btn:hover {
+	background: #3399ff;
+    transition: background .2s ease-in;
+}
+
+.channel-members .member:hover,
+.channel-members .popout-open {
+    background: rgba(255,255,255,0.07) !important;
+}
