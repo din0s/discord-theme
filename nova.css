@@ -31,16 +31,6 @@
     background: transparent !important;
 }
 
-/*Buttons*/
-.btn {
-    opacity: .75;
-    border: solid 1px rgba(235,232,218,0.05);
-}
-
-.btn-group {
-    box-shadow: .75px 1.5px 1px #14171b;
-}
-
 /*Guild area*/
 .guilds-wrapper {
     width: 85px;
@@ -141,8 +131,17 @@ li.channel.channel-text.selected {
     border-top: none;
 }
 
+/*Buttons*/
+#voice-connection .btn,
+.account .btn {
+    border: none;		
+    border-bottom: solid 1px rgba(235,232,218,0.05);
+    opacity: .65;
+}
+
 #voice-connection .btn-group,
 .account .btn-group {
+    box-shadow: .75px 1.5px 1px #14171b;
     border: none;
 }
 
