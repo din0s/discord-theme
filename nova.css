@@ -2,7 +2,7 @@
  * Please do not redistribute without permission.
  * Thank you, and enjoy!
  *
- * VERSION: 2.16
+ * VERSION: 2.26
  *
  */
 
@@ -122,7 +122,8 @@ li.channel.channel-text:hover {
     background: rgba(235,232,218,0.05);
 }
 
-li.channel.channel-text.selected {
+li.channel.channel-text.selected,
+div.channel.selected.private {
     background: rgba(235,232,218,0.1);
 }
 
@@ -237,6 +238,16 @@ li.channel.channel-text.selected {
 .message-group a span {
     color: #5af;
     text-shadow: 1px 1px 0 #001a33;
+}
+
+/*Code blocks*/
+.markup code {
+    background: rgba(0,0,0,0.3) !important;
+}
+
+.markup pre {
+    background: none !important;
+    border: 1px solid rgba(0,0,0,0.5) !important;
 }
 
 /*Scrolling bar*/
