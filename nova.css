@@ -2,7 +2,7 @@
  * Please do not redistribute without permission.
  * Thank you, and enjoy!
  *
- * VERSION: 3.18
+ * VERSION: 4.8
  *
  */
 
@@ -75,11 +75,6 @@ li.active .guild-inner {
 /*Create new guild button*/
 .guilds-add {
     opacity: .15;
-}
-
-/*Help button*/
-.help-container {
-    display: none;
 }
 
 /*Guild name*/
@@ -208,6 +203,20 @@ li.channel.channel-text.selected {
 
 .user-popout .username {
     font-size: 16px;
+}
+
+/*Tooltips*/
+.tooltip {
+    background:#06c;
+    color: #fff;
+}
+
+.tooltip.tooltip-right:after {
+    border-right-color:#06c;
+}
+
+.tooltip.tooltip-top:after {
+    border-top-color:#06c;
 }
 
 /*Info links*/
