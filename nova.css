@@ -2,7 +2,7 @@
  * Please do not redistribute without permission.
  * Thank you, and enjoy!
  *
- * VERSION: 5.11
+ * VERSION: 5.12
  *
  */
 
@@ -157,10 +157,6 @@ li.channel.channel-text.selected {
     border: none;
 }
 
-#voice-connection .btn-group {
-    margin-right: 15px;
-}
-
 /*Friends*/
 .icon-friends {
 	background-color: rgba(0,0,0,0.35) !important;
@@ -184,11 +180,6 @@ li.channel.channel-text.selected {
 
 .account {
     border-top: none;
-    margin-left: 15px;
-}
-
-.account .btn-group {
-    margin-right: 10px;
 }
 
 .status {
