@@ -2,7 +2,7 @@
  * Please do not redistribute without permission.
  * Thank you, and enjoy!
  *
- * VERSION: 5.12
+ * VERSION: 5.20
  *
  */
 
@@ -55,16 +55,16 @@ li.active .guild-inner {
 }
 
 /*Selected guild & unread messages*/
-.guilds li.unread .guild-inner:before {
+.guilds-wrapper .guilds .guild.unread:before {
     background-color: rgba(255,0,0,0.25);
 }
 
-.guilds li.active .guild-inner:before {
+.guilds-wrapper .guilds .guild.selected:before {
     background-color: rgba(0,0,0,0.25);
 }
 
-.guilds li.active .guild-inner:before,
-.guilds li.unread .guild-inner:before {
+.guilds-wrapper .guilds .guild.selected:before,
+.guilds-wrapper .guilds .guild.unread:before {
     width: 77.5px;
     height: 55px;
     margin-top: -28px;
