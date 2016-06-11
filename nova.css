@@ -2,7 +2,7 @@
  * Please do not redistribute without permission.
  * Thank you, and enjoy!
  *
- * VERSION: 5.22
+ * VERSION: 6.11
  *
  */
 
@@ -290,7 +290,8 @@ div.channel.channel-text.selected {
     border: 1px solid rgba(0,0,0,0.5) !important;
 }
 
-/*Blocked spoilers*/
+/*Spoiler tags*/
+.chat .has-more button,
 .message-group-blocked-btn,
 .message-group-blocked.revealed {
     background-color: rgba(0,0,0,0.3) !important;
