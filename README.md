@@ -3,7 +3,7 @@ This is a custom made theme for Discord (requires BetterDiscord).
 
 Feel free to use it, leave feedback and suggest new features!
 
-Designed by *DinosParkour* ; latest version: **5.22**.
+Designed by *DinosParkour* ; latest version: **6.11**.
 
 # Dynamic Import
 Paste this link in your Custom CSS section if you want to
