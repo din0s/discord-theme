@@ -10,7 +10,7 @@ Paste this link in your Custom CSS section if you want to
 dynamically load the theme without having to download any files.
 ```css
 @import
-    url("https://drive.google.com/uc?export=download&id=0B03yfnLpAGhPcXp3Uzg0MTZDZFU")
+    url("https://raw.githubusercontent.com/DinosParkour/discord-theme/master/nova.css")
 ```
 
 # Preview
