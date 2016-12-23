@@ -263,13 +263,13 @@ div.channel.channel-text.selected {
 }
 
 /*Mention*/
-.markup .highlight {
+.markup .mention {
     background-color: rgba(255,255,255,.1) !important;
     color: #ddd;
     border-radius: 10%;
 }
 
-.markup .highlight:hover {
+.markup .mention:hover {
     background-color: rgba(255,255,255,.2) !important;
     color: #ddd;
     border-radius: 10%;
