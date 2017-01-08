@@ -1,8 +1,8 @@
-/* Copyright (c) 2016 DinosParkour
+/* Copyright (c) 2016-2017 DinosParkour
  * Please do not redistribute without permission.
  * Thank you, and enjoy!
  *
- * VERSION: 7.15
+ * VERSION: 1.1.8
  *
  */
 
@@ -15,25 +15,29 @@
 /*Transparency*/
 #voice-connection,
 #friends,
-#friends .btn,
 .friends-header,
 .friends-table,
-.search-bar,
 .guilds-wrapper,
+.guild-header header,
 .channels-wrap,
+.private-channels .search-bar,
+.private-channels,
 .guild-channels,
 .account,
-.links,
+.friend-table-add-header,
 .chat,
-.messages-wrapper,
-.title-wrap,
 .content,
-.chat-empty,
+.title-wrap:not(.search-bar),
+.messages-wrapper,
+.messages .divider span,
+.messages .divider:before,
+.content,
 .message-group-blocked,
-.private-channels,
-.guild-header header,
-.typing,
-.divider-red span {
+.is-local-bot-message,
+.channel-members-loading,
+.channel-members-loading .heading,
+.channel-members-loading .member,
+.typing {
     background: transparent !important;
 }
 
@@ -49,10 +53,6 @@ li.active .guild-inner {
 
 .guilds {
     background: rgba(20,23,27,0.15);
-}
-
-.guilds li {
-    margin-left: 1px;
 }
 
 /*Selected guild & unread messages*/
@@ -75,33 +75,14 @@ li.active .guild-inner {
 
 /*Create new guild button*/
 .guilds-add {
-    opacity: .15;
-}
-
-/*Guild name*/
-.guild-header span {
-    text-shadow: 1px 1.35px 1.5px #808;
-}
-
-/*Guild settings*/
-.guild-header ul {
-    opacity: 0;
-    transition: transform .5s cubic-bezier(0.18,0.89,0.32,1.28);
-}
-
-.guild-header-open ul {
-    opacity: 1;
-}
-
-.btn-hamburger span {
-    background: #fff;
-}
-
-.guild-header header {
-    box-shadow: none;
+    opacity: .420;
 }
 
 /*Channel area*/
+.channel-notice {
+    opacity: .95;
+}
+
 .channel:not(.selected) {
     transition: background .3s ease-out;
 }
@@ -122,10 +103,6 @@ li.active .guild-inner {
 
 .private-channels .channel:hover:before {
     opacity: .25;
-}
-
-.guild-channels ul .channel-text.unread:not(.selected):not(.channel-muted):before {
-    left: -11px;
 }
 
 .search-result,
@@ -152,6 +129,7 @@ div.channel.channel-text.selected {
 .account .btn {
     border: none;
     border-bottom: solid 1px rgba(235,232,218,0.05);
+    background-color: rgb(42, 42, 42) !important;
     opacity: .65;
 }
 
@@ -159,19 +137,6 @@ div.channel.channel-text.selected {
 .account .btn-group {
     box-shadow: .75px 1.5px 1px #14171b;
     border: none;
-}
-
-/*Friends*/
-.icon-friends {
-	background-color: rgba(0,0,0,0.35) !important;
-}
-
-#friends .btn:hover {
-	background-color: rgba(0,0,0,0.25) !important;
-}
-
-.friends-header {
-	border-bottom-color: rgba(0,0,0,0.25) !important;
 }
 
 /*User settings*/
@@ -222,24 +187,28 @@ div.channel.channel-text.selected {
     border-top-color:#06c;
 }
 
-/*Info links*/
-.links {
-    display: none;
+/*Friends*/
+.icon-friends {
+	background-color: rgba(0,0,0,0.35) !important;
 }
 
-/*Channel info*/
+
+#friends .tab-bar-item {
+    transition: background .2s ease-out;
+}
+
+#friends .tab-bar-item:hover {
+    transition: background .2s ease-in;
+	background-color: rgba(0,0,0,0.25) !important;
+}
+
+.friends-header {
+	border-bottom-color: rgba(0,0,0,0.25) !important;
+}
+
+/*Channel bar*/
 .flex-spacer .title-wrap {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    border-top: none;
-    border-style: solid;
     border-color: transparent !important;
-}
-
-/*Channel title*/
-.topic {
-    color: #cdcdcd;
 }
 
 /*Chat area*/
@@ -247,6 +216,10 @@ div.channel.channel-text.selected {
     background: rgba(255,255,255,0.05);
     border-top-left-radius: 23px;
     border-bottom-left-radius: 23px;
+}
+
+.markup {
+	backface-visibility: hidden;
 }
 
 /*Unread messages*/
@@ -263,13 +236,13 @@ div.channel.channel-text.selected {
 }
 
 /*Mention*/
-.markup .highlight {
+.markup .mention {
     background-color: rgba(255,255,255,.1) !important;
     color: #ddd;
     border-radius: 10%;
 }
 
-.markup .highlight:hover {
+.markup .mention:hover {
     background-color: rgba(255,255,255,.2) !important;
     color: #ddd;
     border-radius: 10%;
@@ -289,6 +262,16 @@ div.channel.channel-text.selected {
 .chat .markup pre {
     background: none !important;
     border: 1px solid rgba(0,0,0,0.5) !important;
+	max-width: 75% !important;
+}
+
+/*Embeds*/
+.message-group .embed {
+	background-color: rgba(42,42,42,.3);
+}
+
+.theme-dark .message-group .embed-wrapper .embed-color-pill {
+	background-color: rgba(42,42,42,.66)
 }
 
 /*Spoiler tags*/
@@ -318,16 +301,8 @@ div.channel.channel-text.selected {
     background: rgba(10,13,16,0.1);
 }
 
-/*Twitch emotes button*/
-#twitchcord-button {
-    background-size: 24px;
-    background-position: 20px;
-    background-color: transparent;
-}
-
-/*Typing status*/
-.typing {
-    font-size: 13px;
+.is-local-bot-message {
+    box-shadow: none !important;
 }
 
 /*Settings panel*/
@@ -354,14 +329,6 @@ div.channel.channel-text.selected {
 /*Channel members*/
 .channel-members {
     background: rgba(20,23,27,0.25) !important;
-}
-
-.member-username {
-    text-shadow: 0 0 0 rgba(255,255,255,0.255);
-}
-
-.channel-members-wrap .member-inner div {
-    -webkit-filter: none !important;
 }
 
 .channel-members .invite-btn {

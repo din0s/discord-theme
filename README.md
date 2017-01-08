@@ -1,9 +1,12 @@
 # Nova Discord Theme
-This is a custom made theme for Discord (requires BetterDiscord).
+This is a custom made theme for Discord.
+
+To get the BetterDiscord file, check the [**releases page**](https://github.com/DinosParkour/discord-theme/releases/latest).
 
 Feel free to use it, leave feedback and suggest new features!
+For optimal results, **use the dark theme**.
 
-Designed by *DinosParkour* ; latest version: **7.15**.
+Designed by *DinosParkour* ; latest version: **1.1.8**.
 
 # Dynamic Import
 Paste this link in your Custom CSS section if you want to
@@ -14,4 +17,4 @@ dynamically load the theme without having to download any files.
 ```
 
 # Preview
-![Preview](https://i.imgur.com/uEeYrJ1.png)
+![Preview](https://i.imgur.com/RW48vWc.jpg)
