@@ -1,8 +1,12 @@
+//META{"name":"Nova","description":"Some theme","author":"DinosParkour","version":"1.1.9"}*//
+
 /* Copyright (c) 2016-2017 DinosParkour
  * Please do not redistribute without permission.
  * Thank you, and enjoy!
  *
- * VERSION: 1.1.8
+ * VERSION: 1.1.9
+ *
+ *
  *
  */
 
@@ -10,6 +14,9 @@
 .app {
     background-image: url(https://i.imgur.com/h0YyOD7.png);
     background-size: cover;
+}
+
+.layers { background: transparent!important;
 }
 
 /*Transparency*/
