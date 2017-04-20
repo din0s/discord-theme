@@ -6,7 +6,7 @@ To get the BetterDiscord file, check the [**releases page**](https://github.com/
 Feel free to use it, leave feedback and suggest new features!
 For optimal results, **use the dark theme**.
 
-Designed by *DinosParkour* ; latest version: **1.1.8**.
+Designed by *DinosParkour* ; latest version: **1.4.20**.
 
 # Dynamic Import
 Paste this link in your Custom CSS section if you want to

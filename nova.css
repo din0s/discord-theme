@@ -2,7 +2,7 @@
  * Please do not redistribute without permission.
  * Thank you, and enjoy!
  *
- * VERSION: 1.1.8
+ * VERSION: 1.4.20
  *
  */
 
@@ -27,6 +27,7 @@
 .friend-table-add-header,
 .chat,
 .content,
+.layers,
 .title-wrap:not(.search-bar),
 .messages-wrapper,
 .messages .divider span,
@@ -287,10 +288,7 @@ div.channel.channel-text.selected {
 }
 
 /*Scrolling bar*/
-.scroller-wrap .scroller::-webkit-scrollbar-thumb {
-    border: 3px solid rgba(0,0,0,0.25) !important;
-}
-
+.scroller-wrap .scroller::-webkit-scrollbar-thumb,
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
     border: 3px solid rgba(255,255,255,0) !important;
     background-color: rgba(0,0,0,0.3) !important;
